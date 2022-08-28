@@ -1,0 +1,28 @@
+@import "mixin";
+#clouds-logo {
+
+
+    .row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 40px 65px;
+        border-top: 1px solid #E5E7EB;
+        border-bottom: 1px solid #E5E7EB;
+        margin: 16px 0;
+        .cloud-icon{
+            max-width: 100%;
+        }
+         @include md {
+             row-gap: 37px;
+            column-gap: 32px;   
+            flex-wrap: wrap;       
+         }
+         @include sm {
+            flex-wrap: wrap;
+            row-gap: 32px;
+            column-gap: 64px;
+            max-width: 100%;
+         }
+    }
+}

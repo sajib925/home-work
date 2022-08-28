@@ -1,0 +1,156 @@
+#testimonial {
+    width: 100%;
+    background-color: #D5FAFC;
+    padding: 96px 0;
+
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 64px;
+
+        @include md {
+            flex-direction: column;
+            row-gap: 24px;
+
+        }
+
+        @include sm {
+            flex-direction: column;
+            row-gap: 24px;
+
+        }
+
+        // testimonial right part design start here
+
+        .left {
+
+            .heading {
+                margin-top: -60px;
+                max-width: 488px;
+                @include md {
+                    max-width: 688px;
+                }
+                .icon{
+                    margin-left: -90px;
+                    @include md {
+                        margin: 0;
+                    }
+                    @include sm {
+                        margin: 80px 0 0 0;
+
+                    }
+                }
+
+                .title {
+
+                    margin-top: -60px;
+                    margin-bottom: 8px;
+                    font-family: 'Inter', sans-serif;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 48px;
+                    line-height: 60px;
+                    letter-spacing: -0.025em;
+                    color: #111827;
+
+                    @include md {
+                        font-size: 36px;
+                        line-height: 45px;
+                    }
+
+                    @include sm {
+                        font-size: 30px;
+                        line-height: 40px;
+                    }
+                }
+
+                .sub-title {
+                    font-family: 'Inter', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: #111827;
+                    margin-bottom: 64px;
+                }
+            }
+
+            
+        }
+
+        // testimonial left part design end here
+
+        // testimonial card design start here
+
+        .card {
+            max-width: 384px;
+            right: 0;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 8px -2px rgba(17, 24, 39, 0.1), 0px 2px 4px -2px rgba(17, 24, 39, 0.06);
+            border-radius: 8px;
+            padding: 32px 32px;
+
+            @include md {
+                max-width: 688px;
+                width: 100%;
+            }
+
+            .card-logo {
+                padding-bottom: 32px;
+            }
+
+            .card-text {
+                background: url(../img/small-quetation.svg);
+                background-repeat: no-repeat;
+                background-position: top left;
+                padding-left: 32px;
+
+                .discription {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: #111827;
+                    margin-bottom: 24px;
+
+                }
+
+                .card-title {
+                    font-family: 'Inter', sans-serif;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: #111827;
+                }
+
+                .card-sub-title {
+                    font-family: 'Inter', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #6B7280;
+                }
+            }
+
+        }
+
+        // testimonial card design end here
+
+        // testimonial right part design start here
+        
+        .right{
+            .right-card-one {
+               
+                margin-bottom: 32px;
+                
+            }
+        }
+
+        // testimonial right part design end here
+
+    }
+}

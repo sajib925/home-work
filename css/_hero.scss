@@ -1,0 +1,125 @@
+// @import "mixin";
+
+#hero {
+    background: url(../img/Background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 152px;
+
+        @include md {
+            flex-direction: column;
+            row-gap: 80px;
+           
+        }
+        @include sm {
+            flex-direction: column;
+            row-gap: 80px;
+        }
+
+    }
+
+    .left {
+        max-width: 648px;
+        @include md {
+             justify-content: flex-start;
+             align-items: flex-start;
+        }
+
+        .title {
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 72px;
+            letter-spacing: -0.025em;
+            color: #111827;
+            margin-bottom: 16px;
+             @include md {
+                max-width: 688px; 
+                font-size: 48px;
+                line-height: 60px;
+             }
+
+            @include sm {
+                font-size: 36px;
+                line-height: 45px;
+                text-align: center;
+            }
+
+
+        }
+
+        .sub-title {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: #374151;
+            margin-bottom: 32px;
+
+            @include md {
+                max-width: 688px;
+            }
+
+            @include sm {
+                justify-content: center;
+            }
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            @include sm {
+                text-align: center;
+            }
+
+
+            .primary-btn {
+                text-decoration: none;
+                padding: 16px 24px;
+                background-color: #7C3AED;
+                border-radius: 8px;
+                font-family: 'Inter'sans-serif;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                color: #FFFFFF;
+                margin-right: 42px;
+
+                 @include sm {
+                    margin-right: 30px
+                 }
+                
+            }
+        }
+        .link-btn {
+            display: flex;
+            column-gap: 12px;
+            text-decoration: none;
+            @include sm {
+                column-gap: 10px;
+            }
+            .text{
+              font-family: 'Inter';
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 24px;
+              color: #7C3AED;
+            }
+        }
+    }
+    .right{
+        @include md {
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

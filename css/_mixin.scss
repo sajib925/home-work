@@ -1,0 +1,52 @@
+
+
+// --------------------
+// responsive mixins
+// ---------------------
+$screen-xl-max: 1216px; //Large tablets and desktops
+$screen-lg-max: 1024px; //Tablets and small desktops
+$screen-md-max: 768px; //small tablets (portrait view)
+$screen-sm-max: 576px; //mobiles
+
+//extra large devices
+@mixin xl {
+    @media (max-width: $screen-xl-max) {
+        @content;
+    }
+}
+
+// large devices
+@mixin lg {
+    @media (max-width: $screen-lg-max) {
+        @content;
+    }
+}
+
+// medium devices
+@mixin md {
+    @media (max-width: $screen-md-max) {
+        @content;
+    }
+}
+
+//mobile devices
+@mixin sm {
+    @media (max-width: $screen-sm-max) {
+    @content;
+    }
+}
+
+
+//Customs device
+@mixin rwd($screen) {
+    @media (max-width: $screen) {
+        @content;
+    }
+}
+
+
+
+
+
+
+

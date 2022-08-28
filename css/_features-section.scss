@@ -1,0 +1,102 @@
+#features {
+    .row {
+        text-align: center;
+        margin: 96px 0;
+
+        .features-title {
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 60px;
+            text-align: center;
+            letter-spacing: -0.025em;
+            color: #111827;
+
+            @include md {
+                font-size: 36px;
+                line-height: 45px;
+            }
+
+            @include sm {
+                font-size: 36px;
+                line-height: 45px;
+                letter-spacing: -0.025em;
+                padding-bottom: 8px;
+            }
+        }
+
+        .features-sub-title {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: #111827;
+
+             
+            
+
+        }
+
+        .base-features {
+            padding-top: 32px;
+            display: flex;
+            flex-wrap: wrap;
+            @include md {
+                flex-wrap: wrap;
+            }
+            @include sm {
+                flex-direction: column;
+                row-gap: 30px;
+            }
+
+
+            .feature {
+                width: 33.33%;
+                padding: 32px 30px;
+
+                 @include md {
+                     width: 50%;
+                 }
+                @include sm {
+                    width: 100%;
+                }
+            }
+
+            .feature-title {
+                font-family: 'Inter', sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 40px;
+                color: #111827;
+
+                @include md {
+                   font-size: 24px;
+                   line-height: 32px;
+                }
+                @include sm {
+                    font-size: 36px;
+                    line-height: 45px;
+                    padding: 25px 0 8px 0;
+                }
+            }
+
+            .feature-sub-title {
+                font-family: 'Inter', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #374151;
+
+            }
+        }
+    }
+}
+
+.feature-icon {
+    width: 32px;
+    margin: 0 auto;
+}
